@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: 'Major Mono Display', monospace;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: blue;  
+    padding: 10px;
+
+}
+.todo-app{
+    width: 100%;
+    max-width: 50%;
+    background: rgb(253, 253, 251);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+#bookicon{
+    height: 50%;
+    max-width: 30%;
+    /* margin: 10px 10px; */
+    /* box-sizing: border-box; */
+    /* font-family: 'Major Mono Display', monospace; */
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Poppins', sans-serif; */
+
+}
+.todo-app h2{
+    user-select: none;
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;  
+    
+}
+#bookicon{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #839cce;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    
+    
+}
+input{
+    flex: 1;
+    border: none ;
+    outline: none ;
+    background: transparent  ;
+    padding: 10px ;
+    cursor: text; 
+
+}
+button{
+    border-width: 5px;
+    border-radius: 20px;
+    min-width: 100px;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 50px;
+    
+    cursor: copy;
+    border-radius: 40px;
+    background-color: rgb(117, 93, 47);
+    
+}
+ul li{
+    list-style: none;
+font-size: 17px;
+padding: 12px 8px 12px 15px;
+user-select: none;
+cursor: pointer;
+  }
+  ul li{
+    list-style: none
+    ;font-size: 17px;
+    padding: 12px 8px 50px;
+     user-select: none;
+     position: relative;
+}
+ul li::before{
+   
+        content: url('./radio-button-uncheck.svg');
+        position: absolute;
+        /* left: 25px; */
+        right: 40px;
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        /* background-image: url('./radio-button-uncheck.svg'); */
+        background-size: cover;
+        background-position: center;
+        /* top: 12px; */
+        /* left: 8px; */
+      }
+
+#chk::before{
+    /* background-color: black; */
+    /* color: #555; */
+    content: url('./ios-radio-button-on-8-16.png');
+}      
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 60%; 
+}
